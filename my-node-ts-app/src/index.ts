@@ -9,7 +9,7 @@ import userRoutes from './routes/userRoutes';
 import mongoose from 'mongoose';
 
 const app: Application = express();
-const PORT = 5000;
+const PORT = 6000;
 
 app.use(express.json());
 app.use('/api/users', userRoutes);
@@ -22,4 +22,3 @@ mongoose.connect('mongodb+srv://DevTinder:DevTinder@devtinder.8oxmp.mongodb.net/
         });
     })
     .catch(err => console.error('❌ MongoDB connection error..', err));
-
